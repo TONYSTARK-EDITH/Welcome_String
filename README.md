@@ -19,7 +19,7 @@ from wstring import wstring
 
 wstring.wstring("Welcome")
 ```
-![](wstring/tree/master/img/a.jpg?raw=true)
+<img src="img/a.jpg"\>
 
 
 The 3 optional arguments are length,height and symbol
