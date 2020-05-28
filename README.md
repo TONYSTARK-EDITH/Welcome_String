@@ -19,12 +19,15 @@ from Welcome_String import Welcome_String
 
 Welcome_String("Welcome")
 ```
+![](a.jpg)
+
+
 The 3 optional arguments are length,height and symbol
 ```python
 # Printing Welcome with all 4 arguments
-Welcome_String =("Welcome",length = 5, height = 5, symbol = '*')
+Welcome_String =("Welcome",length = 5, height = 5, symbol = '$')
 ```
-
+![](s.jpg)
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
