@@ -19,7 +19,7 @@ from Welcome_String import Welcome_String
 
 Welcome_String("Welcome")
 ```
-![](https://github.com/TONYSTARK-EDITH/Welcome_String/tree/master/img/a.jpg)
+![](Welcome_String/tree/master/img/a.jpg?raw=true)
 
 
 The 3 optional arguments are length,height and symbol
