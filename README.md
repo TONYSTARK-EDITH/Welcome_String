@@ -19,7 +19,7 @@ from Welcome_String import Welcome_String
 
 Welcome_String("Welcome")
 ```
-![](Welcome_String/tree/master/img/a.jpg?raw=true)
+<img src = "img/a.jpg"/>
 
 
 The 3 optional arguments are length,height and symbol
