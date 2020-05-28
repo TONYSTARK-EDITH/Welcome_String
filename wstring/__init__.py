@@ -1,0 +1,1 @@
+from wstring import wstring
