@@ -27,7 +27,7 @@ The 3 optional arguments are length,height and symbol
 # Printing Welcome with all 4 arguments
 Welcome_String =("Welcome",length = 5, height = 5, symbol = '$')
 ```
-![](https://github.com/TONYSTARK-EDITH/Welcome_String/tree/master/img/s.jpg "Optional title")
+<img src = "img/s.jpg"/>
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
