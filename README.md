@@ -31,7 +31,7 @@ Welcome_String =("Welcome",length = 5, height = 5, symbol = '$')
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-Please make sure to update tests as appropriate.Optional title
+Please make sure to update tests as appropriate.
 
 ## License
 [MIT](https://github.com/TONYSTARK-EDITH/Welcome_String/blob/master/LICENSE)
