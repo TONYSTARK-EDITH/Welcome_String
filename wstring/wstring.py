@@ -1,24 +1,55 @@
 """
 A welcoming library which prints the passed string into patterns in the output
 """
+import sys
+from termcolor import cprint
 
 
-class wstring():
-    def __init__(self, String, length=7, height=7, symbol="#"):
+class wstring:
+    def __init__(self, String, length=7, height=7, symbol="$", color="default"):
         # Initialising the word list in order to print the letters in the order of the string
         self.word = []
         l = 0
         self.height = height
         self.length = length
         self.symbol = symbol
+        self.color = color.lower()
+        if sys.platform == 'win32':
+            from colorama import init  # for windows powershell and cmd
+            init()
+
+        try:
+            # This will only work in IDLE, it won't work from a command prompt
+            self.shell_connect = sys.stdout.shell  # check if idle or terminal
+
+            self.colormap = {"red": ("COMMENT", "Red"),
+                             "yellow": ("KEYWORD", "Light Red"),
+                             "green": ("STRING", "Green"),
+                             "blue": ("stdout", "Blue"),
+                             "purple": ("BUILTIN", "Purple"),  # magenta
+                             "default": ("SYNC", "Black")}
+
+
+
+        except AttributeError:
+            # This will only work linux teminal,win powershell, cmd
+            self.colormap = {"red": "red",
+                             "yellow": "yellow",
+                             "green": "green",
+                             "blue": "blue",
+                             "purple": "magenta",
+                             "default": "white"}
+        except Exception as a:
+            self.printincolor(a, clr='r')
+        if self.color not in self.colormap:
+            self.color = 'default'
         for i in list(String):
             self.check(i.lower())
         for i in range(self.height):
             for k in range(len(self.word)):
-                print("".join(self.word[k][l]), end="  ")
-                continue
+                self.printincolor("".join(self.word[k][l]), clr=self.color, end="  ")
             l += 1
-            print()
+            self.printincolor("", clr=self.color, end='\n')
 
     def printA(self):
         self.a = [[" " for i in range(self.length)] for i in range(self.height)]
@@ -235,7 +266,7 @@ class wstring():
         for i in range(self.height):
             for j in range(self.length):
                 if ((i == j or j == self.length - 1 - i) and i <= self.height // 2) or (
-                        j == self.length // 2 and i > self.height // 2) or ():
+                        j == self.length // 2 and i > self.height // 2):
                     self.y[i][j] = self.symbol
         pass
 
@@ -443,3 +474,11 @@ class wstring():
         elif i == '9':
             self.print9()
             self.word.append(self.num_9)
+
+    def printincolor(self, text, clr, end=' '):
+        try:
+            self.shell_connect.write(text + end, self.colormap[clr][0])
+        except Exception as a:
+            cprint(text, self.colormap[clr], attrs=['bold'], file=sys.stderr, end=end)
+
+
