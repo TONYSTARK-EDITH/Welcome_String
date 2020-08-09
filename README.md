@@ -22,13 +22,13 @@ wstring.wstring("Welcome")
 ![](normal.jpg)
 
 
-The 3 optional arguments are length,height,symbol and color
+The 4 optional arguments are length,height,symbol and color
 ```python
 # Printing Welcome with all 4 arguments
 wstring.wstring("Welcome",length = 5, height = 5, symbol = '$',color='red')
 ```
 ![](clr.jpg)
-
+W
 ##Update
 Color has been added to the welcome string which makes it more attractive.
 For now there are 5 different colors they are
