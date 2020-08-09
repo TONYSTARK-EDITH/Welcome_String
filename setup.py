@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="wstring",  # Replace with your own username
-    version="1.1.0",
+    version="2.0",
     author="Tony Stark",
     author_email="manthirajak@gmail.com",
     description="A library to print a welcome message in patterns",
@@ -18,5 +18,8 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    python_requires='>=3.6',
+    python_requires='>=3.0',
 )
+"""
+python -m twine upload -u __token__ -p pypi-AgEIcHlwaS5vcmcCJDQ5ZTM4NmYzLTVjYTYtNDNjOC05MzE0LWU3OTM1ZGUxMjAzMQACJXsicGVybWlzc2lvbnMiOiAidXNlciIsICJ2ZXJzaW9uIjogMX0AAAYgHWZXMGXV-djGYZXD-fpzFp-_yMQu0hzs5a3i1TXOApg  dist/*
+"""
