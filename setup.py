@@ -13,6 +13,10 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/TONYSTARK-EDITH/Welcome_String",
+    install_requires=[
+        'colorama',
+        'termcolor',
+    ],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",

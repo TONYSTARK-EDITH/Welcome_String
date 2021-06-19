@@ -5,7 +5,7 @@ import sys
 from termcolor import cprint
 
 
-class wstring:
+class wString:
     def __init__(self, String, length=7, height=7, symbol="$", color="default"):
         # Initialising the word list in order to print the letters in the order of the string
         self.word = []
@@ -31,8 +31,8 @@ class wstring:
 
 
 
-        except AttributeError:
-            # This will only work linux teminal,win powershell, cmd
+        except AttributeError as e:
+            # This will only work linux terminal,win powershell, cmd
             self.colormap = {"red": "red",
                              "yellow": "yellow",
                              "green": "green",
@@ -40,16 +40,16 @@ class wstring:
                              "purple": "magenta",
                              "default": "white"}
         except Exception as a:
-            self.printincolor(a, clr='r')
+            self.printInColor(a, clr='r')
         if self.color not in self.colormap:
             self.color = 'default'
         for i in list(String):
             self.check(i.lower())
         for i in range(self.height):
             for k in range(len(self.word)):
-                self.printincolor("".join(self.word[k][l]), clr=self.color, end="  ")
+                self.printInColor("".join(self.word[k][l]), clr=self.color, end="  ")
             l += 1
-            self.printincolor("", clr=self.color, end='\n')
+            self.printInColor("", clr=self.color, end='\n')
 
     def printA(self):
         self.a = [[" " for i in range(self.length)] for i in range(self.height)]
@@ -475,10 +475,8 @@ class wstring:
             self.print9()
             self.word.append(self.num_9)
 
-    def printincolor(self, text, clr, end=' '):
+    def printInColor(self, text, clr, end=' '):
         try:
             self.shell_connect.write(text + end, self.colormap[clr][0])
         except Exception as a:
             cprint(text, self.colormap[clr], attrs=['bold'], file=sys.stderr, end=end)
-
-

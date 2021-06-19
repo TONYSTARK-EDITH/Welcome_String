@@ -13,19 +13,21 @@ pip install wstring
 ## Usage
 
 The wstring takes 1 argument and 4 optional arguments
+
 ```python
 # Printing Welcome with default arguments
 from wstring import wstring
 
-wstring.wstring("Welcome")
+wstring.wString("Welcome")
 ```
 ![](normal.jpg)
 
 
 The 4 optional arguments are length,height,symbol and color
+
 ```python
 # Printing Welcome with all 4 arguments
-wstring.wstring("Welcome",length = 5, height = 5, symbol = '$',color='red')
+wstring.wString("Welcome", length=5, height=5, symbol='$', color='red')
 ```
 ![](clr.jpg)
 
