@@ -3,11 +3,15 @@ A welcoming library which prints the passed string into patterns in the output
 """
 import sys
 from termcolor import cprint
-
+from Exceptions import *
 
 class wString:
     def __init__(self, String, length=7, height=7, symbol="$", color="default"):
         # Initialising the word list in order to print the letters in the order of the string
+        if len(symbol.strip()) > 1:
+            raise CharacterExpectedGotStringException(f"Argument symbol expected character got {symbol}")
+        if symbol.strip() == "" or symbol.strip() == " ":
+            raise EmptyCharacterFoundException(f"Argument symbol expected a valid character but got empty character")
         self.word = []
         l = 0
         self.height = height
@@ -50,6 +54,7 @@ class wString:
                 self.printInColor("".join(self.word[k][l]), clr=self.color, end="  ")
             l += 1
             self.printInColor("", clr=self.color, end='\n')
+        print()
 
     def printA(self):
         self.a = [[" " for i in range(self.length)] for i in range(self.height)]
@@ -480,3 +485,7 @@ class wString:
             self.shell_connect.write(text + end, self.colormap[clr][0])
         except Exception as a:
             cprint(text, self.colormap[clr], attrs=['bold'], file=sys.stderr, end=end)
+
+
+    def __repr__(self):
+        return ""
