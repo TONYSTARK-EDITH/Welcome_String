@@ -24,6 +24,3 @@ setuptools.setup(
     ],
     python_requires='>=3.0',
 )
-"""
-python -m twine upload -u __token__ -p pypi-AgEIcHlwaS5vcmcCJDQ5ZTM4NmYzLTVjYTYtNDNjOC05MzE0LWU3OTM1ZGUxMjAzMQACJXsicGVybWlzc2lvbnMiOiAidXNlciIsICJ2ZXJzaW9uIjogMX0AAAYgHWZXMGXV-djGYZXD-fpzFp-_yMQu0hzs5a3i1TXOApg  dist/*
-"""
