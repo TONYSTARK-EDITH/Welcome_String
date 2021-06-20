@@ -1,4 +1,4 @@
-
+﻿
 # Welcome String
 
 Welcome String is a Python library for printing the Title in patterns
@@ -32,7 +32,7 @@ wstring.wString("Welcome", length=5, height=5, symbol='$', color='red')
 ```
 ![](clr.jpg)
 
-## Update
+## Update V2.0
 
 
 Color has been added to the welcome string which makes it more attractive.
@@ -55,6 +55,15 @@ Users are allowed to pass the color name as an optional attribute, if the color 
 </ul>
 
 Wstring is now platform independent and it works even in cmd in windows and terminal in linux
+
+## Update V2.0.1a
+
+New exceptions has been included
+
+ 1. CharacterExpectedGotStringException
+ 2. EmptyCharacterFoundException
+ 
+Test cases has been included
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
