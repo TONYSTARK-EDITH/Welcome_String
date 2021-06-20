@@ -32,7 +32,7 @@ wstring.wString("Welcome", length=5, height=5, symbol='$', color='red')
 ```
 ![](clr.jpg)
 
-## Update V2.0
+## Features
 
 
 Color has been added to the welcome string which makes it more attractive.
@@ -55,8 +55,6 @@ Users are allowed to pass the color name as an optional attribute, if the color 
 </ul>
 
 Wstring is now platform independent and it works even in cmd in windows and terminal in linux
-
-## Update V2.0.1a
 
 New exceptions has been included
 

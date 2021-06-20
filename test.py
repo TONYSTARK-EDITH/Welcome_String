@@ -1,7 +1,7 @@
 import unittest
 
-from wstring import wString
-from Exceptions import *
+from wstring.wstring import wString
+from wstring.Exceptions import *
 
 class TestWelcomeString(unittest.TestCase):
         

@@ -3,7 +3,7 @@ A welcoming library which prints the passed string into patterns in the output
 """
 import sys
 from termcolor import cprint
-from Exceptions import *
+from .Exceptions import *
 
 class wString:
     def __init__(self, String, length=7, height=7, symbol="$", color="default"):
