@@ -102,7 +102,7 @@ wstring("Welcome", length=5, height=5, symbol='$', color='red')
 </pre>
 
 <pre style="color:red;">
-	<span style="color:green">stark@Stark:~$</span> <span style="color:white;">wstring -S cli optional -s# -c red -l 7 -H 7</span>
+<span style="color:green">stark@Stark:~$</span> <span style="color:white;">wstring -S cli optional -s# -c red -l 7 -H 7</span>
     #######  #        #######           #######  #######  #######  #######  #######  #     #  #######  #        
     #        #           #              #     #  #     #     #        #     #     #  ##    #  #     #  #        
     #        #           #              #     #  #     #     #        #     #     #  # #   #  #     #  #        
