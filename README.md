@@ -90,9 +90,9 @@ wstring("Welcome", length=5, height=5, symbol='$', color='red')
     -c COLOR, --color COLOR
                           Color the pattern should be printed
   ```
-  <img src="/home/stark/Desktop/Welcome_String/cli.svg" alt="cli" style="zoom:150%;" />
+  <img src="cli.svg" alt="cli" style="zoom:150%;" />
 
-  <img src="/home/stark/Desktop/Welcome_String/cli-optional.svg" alt="cli-optional" style="zoom:150%;" />
+  <img src="cli-optional.svg" alt="cli-optional" style="zoom:150%;" />
 
   
 
