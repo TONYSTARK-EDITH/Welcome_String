@@ -90,9 +90,16 @@ wstring("Welcome", length=5, height=5, symbol='$', color='red')
     -c COLOR, --color COLOR
                           Color the pattern should be printed
   ```
-  <img src="https://drive.google.com/uc?export=view&id=1m1ad3q3bQwi-JQK4VRoiYUxO43BHF4Ct" alt="cli" style="zoom:150%;" />
+  
+  
 
+  <img src="https://drive.google.com/uc?export=view&id=1m1ad3q3bQwi-JQK4VRoiYUxO43BHF4Ct" alt="cli" style="zoom:150%;" />
+  
+  
   <img src="https://drive.google.com/uc?export=view&id=1l8uHF_h9gXjFhADZLeGVJ1vPBTAy-Ixa" style="zoom:150%;"  alt="cli-optional" />
+  
+  
+  
 
 
   Test cases has been included
