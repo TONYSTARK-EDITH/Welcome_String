@@ -102,20 +102,17 @@ wstring("Welcome", length=5, height=5, symbol='$', color='red')
   $$$$$$$  $$$$$$$  $$$$$$$ 
   
   ```
-
-  ```bash
-  stark@Stark:~$ wstring -S cli optional -s# -c yellow -l 7 -H 7
+  
+  ```
+  stark@Stark:~/Desktop/Welcome_String$ wstring -S cli optional -s# -c red -l 7 -H 7
   #######  #        #######           #######  #######  #######  #######  #######  #     #  #######  #        
   #        #           #              #     #  #     #     #        #     #     #  ##    #  #     #  #        
   #        #           #              #     #  #     #     #        #     #     #  # #   #  #     #  #        
   #        #           #              #     #  #######     #        #     #     #  #  #  #  #######  #        
   #        #           #              #     #  #           #        #     #     #  #   # #  #     #  #        
   #        #           #              #     #  #           #        #     #     #  #    ##  #     #  #        
-  #######  #######  #######           #######  #           #     #######  #######  #     #  #     #  ####### 	
-  
+  #######  #######  #######           #######  #           #     #######  #######  #     #  #     #  ####### 
   ```
-
-  
 
 Test cases has been included
 
