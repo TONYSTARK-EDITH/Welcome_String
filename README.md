@@ -20,7 +20,7 @@ from wstring import wstring
 
 wstring("Welcome")
 ```
-![](normal.jpg)
+<img src="https://drive.google.com/uc?export=view&id=10S_ImnQCckdvpOkd1_V2xmJNIuvtXWay" style="zoom:150%;" />
 
 
 The 4 optional arguments are length,height,symbol and color
@@ -29,7 +29,7 @@ The 4 optional arguments are length,height,symbol and color
 # Printing Welcome with all 4 arguments
 wstring("Welcome", length=5, height=5, symbol='$', color='red')
 ```
-![](clr.jpg)
+<img src="https://drive.google.com/uc?export=view&id=1PrlL0v6ScUnPHAqBn0F_w15uLG0mUZ1U" style="zoom:150%;" />
 
 ## Features
 
@@ -90,9 +90,9 @@ wstring("Welcome", length=5, height=5, symbol='$', color='red')
     -c COLOR, --color COLOR
                           Color the pattern should be printed
   ```
-  <img src="cli.svg" alt="cli" style="zoom:150%;" />
+  <img src="https://drive.google.com/uc?export=view&id=1JYVA4EWIUC4K_LUB1aV2ggPtRjmTc7tN" alt="cli" style="zoom:150%;" />
 
-  <img src="cli-optional.svg" alt="cli-optional" style="zoom:150%;" />
+  <img src="https://drive.google.com/uc?export=view&id=15Nx8Y0WOXGymip92C8gi5PU1Tw_6uoaZ" alt="cli-optional" style="zoom:150%;" />
 
   
 
