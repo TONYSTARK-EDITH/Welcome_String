@@ -5,7 +5,23 @@ import sys
 from termcolor import cprint
 from .Exceptions import *
 
-class wString:
+def main():
+    import argparse
+    parser = argparse.ArgumentParser(prog="wstring",description="Welcome string to print the given string in pattern")
+    parser.add_argument("-S","--string",type=str,nargs="*",help="String to be printed as pattern",required=True)
+    parser.add_argument("-s","--symbol",type=str,nargs=1,help="A character to be used to print the given string as a pattern",default="$",required=False)
+    parser.add_argument("-l","--length",type=int,nargs=1,help="Length of the pattern",default=[7],required=False)
+    parser.add_argument("-H","--height",nargs=1,type=int,help="Height of the pattern",default=[7],required=False)
+    parser.add_argument("-c","--color",nargs=1,type=str,help="Color the pattern should be printed",default="default",required=False)
+    args = parser.parse_args()
+    string = " ".join(args.string)
+    symbol = args.symbol[0]
+    length = args.length[0]
+    height = args.height[0]
+    color = args.color[0]
+    wstring(string,length=length,height=height,symbol=symbol,color=color)
+
+class wstring:
     def __init__(self, String, length=7, height=7, symbol="$", color="default"):
         # Initialising the word list in order to print the letters in the order of the string
         if len(symbol.strip()) > 1:

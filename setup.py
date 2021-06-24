@@ -4,8 +4,8 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="wstring",  # Replace with your own username
-    version="1.0.1",
+    name="wstring",
+    version="1.0.2",
     author="Tony Stark",
     author_email="manthirajak@gmail.com",
     description="A library to print a welcome message in patterns",
@@ -17,6 +17,13 @@ setuptools.setup(
         'colorama',
         'termcolor',
     ],
+    entry_points={
+        'console_scripts':[
+            'wstring = wstring.wstring:main'
+        ]
+    },
+    keywords = "Welcome String,python,terminal"
+    ,
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",

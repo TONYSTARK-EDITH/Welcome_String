@@ -1,1 +1,1 @@
-from wstring import wstring
+from wstring.wstring import wstring
