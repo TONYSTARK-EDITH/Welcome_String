@@ -1,5 +1,5 @@
 
-# \Welcome String
+# Welcome String
 Welcome String is a Python library for printing the Title in patterns
 
 ## Installation
