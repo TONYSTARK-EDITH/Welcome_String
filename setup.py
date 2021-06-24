@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="wstring",
-    version="1.0.2a",
+    version="1.0.2",
     author="Tony Stark",
     author_email="manthirajak@gmail.com",
     description="A library to print a welcome message in patterns",
