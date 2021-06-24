@@ -90,29 +90,13 @@ wstring("Welcome", length=5, height=5, symbol='$', color='red')
     -c COLOR, --color COLOR
                           Color the pattern should be printed
   ```
-<pre style="color:white">
-    <span style="color:green">stark@Stark:~$</span><span style="color:white;"> wstring -S cli</span>
-    $$$$$$$  $        $$$$$$$  
-    $        $           $     
-    $        $           $     
-    $        $           $     
-    $        $           $     
-    $        $           $     
-    $$$$$$$  $$$$$$$  $$$$$$$
-</pre>
+  <img src="/home/stark/Desktop/Welcome_String/cli.svg" alt="cli" style="zoom:150%;" />
 
-<pre style="color:red;">
-    <span style="color:green">stark@Stark:~$</span> <span style="color:white;">wstring -S cli optional -s# -c red -l 7 -H 7</span>
-    #######  #        #######           #######  #######  #######  #######  #######  #     #  #######  #        
-    #        #           #              #     #  #     #     #        #     #     #  ##    #  #     #  #        
-    #        #           #              #     #  #     #     #        #     #     #  # #   #  #     #  #        
-    #        #           #              #     #  #######     #        #     #     #  #  #  #  #######  #        
-    #        #           #              #     #  #           #        #     #     #  #   # #  #     #  #        
-    #        #           #              #     #  #           #        #     #     #  #    ##  #     #  #        
-    #######  #######  #######           #######  #           #     #######  #######  #     #  #     #  ####### 
-</pre>
+  <img src="/home/stark/Desktop/Welcome_String/cli-optional.svg" alt="cli-optional" style="zoom:150%;" />
 
-Test cases has been included
+  
+
+  Test cases has been included
 
 
 
