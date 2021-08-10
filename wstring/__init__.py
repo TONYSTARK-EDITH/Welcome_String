@@ -1,1 +1,1 @@
-from wstring.wstring import wstring
+from wstring.wstring import Wstring, EmptyCharacterFoundException, CharacterExpectedGotStringException

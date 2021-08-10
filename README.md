@@ -16,9 +16,9 @@ The wstring takes 1 argument and 4 optional arguments
 
 ```python
 # Printing Welcome with default arguments
-from wstring import wstring
+from wstring import Wstring
 
-wstring("Welcome")
+Wstring("Welcome")
 ```
 <img src="https://drive.google.com/uc?export=view&id=10S_ImnQCckdvpOkd1_V2xmJNIuvtXWay" style="zoom:150%;" />
 
@@ -27,7 +27,9 @@ The 4 optional arguments are length,height,symbol and color
 
 ```python
 # Printing Welcome with all 4 arguments
-wstring("Welcome", length=5, height=5, symbol='$', color='red')
+from wstring import Wstring
+
+Wstring("Welcome", length=5, height=5, symbol='$', color='red')
 ```
 <img src="https://drive.google.com/uc?export=view&id=1PrlL0v6ScUnPHAqBn0F_w15uLG0mUZ1U" style="zoom:150%;" />
 
@@ -56,7 +58,7 @@ wstring("Welcome", length=5, height=5, symbol='$', color='red')
   <li>Linux --> white</li>
   </ul>
 
-  Color has been inspired from the work of <b>[AbhijithAJ](https://github.com/AbhijithAJ)</b> from the project <b>[clrprint](https://github.com/AbhijithAJ/clrprint)</b>
+  Color has been inspired from the work of <b><i>[AbhijithAJ](https://github.com/AbhijithAJ) </i> </b> from the project <b><i>[clrprint](https://github.com/AbhijithAJ/clrprint) </i></b>
   Wstring is now platform independent and it works even in cmd in windows and terminal in linux
 
 - ## **Exception**

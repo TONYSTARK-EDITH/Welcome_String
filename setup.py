@@ -18,11 +18,11 @@ setuptools.setup(
         'termcolor',
     ],
     entry_points={
-        'console_scripts':[
+        'console_scripts': [
             'wstring = wstring.wstring:main'
         ]
     },
-    keywords = "Welcome String,python,terminal"
+    keywords="Welcome String,python,terminal"
     ,
     classifiers=[
         "Programming Language :: Python :: 3",

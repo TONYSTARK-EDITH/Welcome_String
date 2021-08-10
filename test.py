@@ -1,31 +1,32 @@
 import unittest
 
-from wstring.wstring import wString
-from wstring.Exceptions import *
+from wstring import *
+
 
 class TestWelcomeString(unittest.TestCase):
-        
+
     def test_normal_case(self):
         with self.assertRaises(CharacterExpectedGotStringException):
-            wString("Hello",symbol="54")
+            Wstring("Hello", symbol="54")
 
         with self.assertRaises(EmptyCharacterFoundException):
-            wString("Hello",symbol="")
+            Wstring("Hello", symbol="")
 
     def test_color_case(self):
-        wString("Default")
-        wString("Red",color="red")
-        wString("Green",color="green")
-        wString("Purple",color="purple")
-        wString("Blue",color="Blue")
-        wString("Yellow",color="Yellow")
+        Wstring("Default")
+        Wstring("Red", color="red")
+        Wstring("Green", color="green")
+        Wstring("Purple", color="purple")
+        Wstring("Blue", color="Blue")
+        Wstring("Yellow", color="Yellow")
 
     def test_symbol_case(self):
         print()
-        wString("Dollar")
-        wString("Hash",symbol="#")
-        wString("Asterick",symbol="*")
-        wString("One",symbol="1")
+        Wstring("Dollar")
+        Wstring("Hash", symbol="#")
+        Wstring("Asterisk", symbol="*")
+        Wstring("One", symbol="1")
+
 
 if __name__ == "__main__":
     unittest.main()
